@@ -1,0 +1,81 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+            app:title="@string/backend_header">
+
+        <EditTextPreference
+                android:key="host"
+                android:defaultValue="8000"
+                android:title="Host"
+                app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+                android:key="port"
+                android:defaultValue="rfid.beznog.com"
+                android:title="Port"
+                app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            app:title="@string/reader_header">
+
+        <EditTextPreference
+                android:key="vendor_id"
+                android:defaultValue="1345"
+                android:title="Vendor ID"
+                app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+                android:key="product_id"
+                android:defaultValue="4435"
+                android:title="Product ID"
+                app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+                app:key="baudrate"
+                app:title="Baudrate"
+                app:entries="@array/baudrate_entries"
+                app:entryValues="@array/baudrate_values"
+                app:defaultValue="38400"
+                app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+                android:key="data_bits"
+                android:defaultValue="8"
+                android:title="Data bits"
+                app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+                android:key="stop_bits"
+                android:defaultValue="STOPBITS_1"
+                android:title="Stop bits"
+                app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+                android:key="parity_bit"
+                android:defaultValue="PARITY_NONE"
+                android:title="Parity bit"
+                app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+                android:key="write_timeout"
+                android:defaultValue="1000"
+                android:title="Write timeout (Ms)"
+                app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+                android:key="read_timeout"
+                android:defaultValue="1000"
+                android:title="Read timeout (Ms)"
+                app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+                android:key="write_read_sleep"
+                android:defaultValue="10"
+                android:title="Time between write and read (Ms)"
+                app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

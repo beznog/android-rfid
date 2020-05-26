@@ -1,0 +1,18 @@
+<resources>
+    <!-- Baudrate Preference -->
+    <string-array name="baudrate_entries">
+        <item>115200</item>
+        <item>56000</item>
+        <item>38400</item>
+        <item>19200</item>
+        <item>9600</item>
+    </string-array>
+
+    <string-array name="baudrate_values">
+        <item>115200</item>
+        <item>56000</item>
+        <item>38400</item>
+        <item>19200</item>
+        <item>9600</item>
+    </string-array>
+</resources>
